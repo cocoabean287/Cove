@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/app_name"
+        android:textColor="#1B2A38"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/instructionText"
+        android:textColor="#708497"
+        android:textSize="14sp" />
+
+    <!-- Displays dots for entered digits -->
+    <TextView
+        android:id="@+id/pinDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:letterSpacing="0.4"
+        android:text="@string/displayDots"
+        android:textColor="#1B2A38"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="#D97757"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <!-- Numeric Keypad Grid -->
+    <GridLayout
+        android:id="@+id/keypadGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_1" android:tag="1" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_2" android:tag="2" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_3" android:tag="3" />
+
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_4" android:tag="4" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_5" android:tag="5" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_6" android:tag="6" />
+
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_7" android:tag="7" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_8" android:tag="8" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_9" android:tag="9" />
+
+        <Button style="@style/Widget.Material3.Button.TextButton" android:text="@string/clear" android:tag="clear" />
+        <Button style="@style/Widget.Cove.KeypadButton" android:text="@string/_0" android:tag="0" />
+        <Button style="@style/Widget.Material3.Button.TextButton" android:text="@string/delete" android:tag="delete" />
+    </GridLayout>
+
+</LinearLayout>

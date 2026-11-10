@@ -4,6 +4,10 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+    <style name="Widget.Cove.KeypadButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="backgroundTint">#1B2A38</item>
+        <item name="android:textColor">#E2ECE9</item>
+    </style>
 
     <style name="Theme.Cove" parent="Base.Theme.Cove" />
 </resources>
